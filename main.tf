@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "us-east-1"
 }
 
-resource "aws_instance" "dev" {
-    ami = "ami-05295b6e6c790593e"
+resource "aws_instance" "myec2" {
+    ami = "ami-0c101f26f147fa7fd"
     instance_type = "t2.medium"
-    key_name = "mykey"
+    key_name = "hii"
     tags = {
-      Name = "dev-ec3"
+      Name = "bhasker"
     }
 }
